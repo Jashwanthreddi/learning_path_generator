@@ -17,7 +17,7 @@ if generate_clicked:
         try:
             result=generate_learning_path(skill)
         except RuntimeError as e:
-            st.error(Str(e))
+            st.error(str(e))
             st.stop()
         except Exception as e:
             st.error(f"Generator failed: {e}")
